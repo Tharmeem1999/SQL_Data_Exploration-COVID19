@@ -15,6 +15,7 @@ From PortfolioProject..CovidDeaths
 Where continent is Not Null
 ORDER BY 1,2
 
+	
 -- Total Cases vs Total Deaths
 -- Shows likelihood of dying if you contracted COVID in your country
 Select location, date, total_cases, total_deaths, (total_deaths*1.0/total_cases)*100 As DeathPercentage
@@ -50,6 +51,7 @@ Where continent is Not Null
 Group By location
 ORDER BY TotalDeathCount desc
 
+	
 -- Identifying continent with Highest Death Count per Population
 Select continent, MAX(total_deaths) As TotalDeathCount
 From PortfolioProject..CovidDeaths
@@ -59,6 +61,7 @@ Group By continent
 ORDER BY TotalDeathCount desc
 
 
+	
 -- Global Numbers (Group by Date)
 Select date, SUM(new_cases) As TotalCases, SUM(new_deaths) As TotalDeaths, SUM(new_deaths*1.0)/SUM(new_cases)*100 As DeathPercentage
 From PortfolioProject..CovidDeaths
@@ -76,6 +79,7 @@ Where continent is Not Null
 ORDER BY 1,2
 
 
+	
 -- Comparing total population to vaccination numbers
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations, SUM(CONVERT(int, vac.new_vaccinations)) Over (Partition by dea.location order by dea.location, dea.date) As CumulativePeopleVaccinated
 From PortfolioProject..CovidDeaths As dea
