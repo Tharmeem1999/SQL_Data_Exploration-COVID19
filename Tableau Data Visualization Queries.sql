@@ -20,13 +20,13 @@ order by 1,2
 -- 2. Total Deaths by Continent
 
 -- European Union is part of Europe
-
 Select location, SUM(new_deaths) as TotalDeathCount
 From PortfolioProject..CovidDeaths
 Where continent is null And location not in ('World', 'European Union', 'International')
 Group by location
 order by TotalDeathCount desc
 
+	
 
 -- 3. Percentage of Population Infected by Country
 
@@ -35,6 +35,7 @@ From PortfolioProject..CovidDeaths
 Group by Location, Population
 order by PercentPopulationInfected desc
 
+	
 
 -- 4. Percentage of Population Infected
 
