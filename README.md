@@ -27,4 +27,4 @@ A separate SQL file named **`Tableau Data Visualization Queries.sql`** contains 
 The dashboard was created and published using **Tableau Public**. You can view it here:  
 🔗 [Simple COVID Dashboard on Tableau Public](https://public.tableau.com/app/profile/tharmeem.puthra/viz/SimpleCOVIDDashboard/Dashboard1)
 
-> **Note:** Tableau Public does not support direct SQL file imports. Therefore, I exported the SQL query results to Excel, which are included in the `Tableau Tables` folder in this repository. These Excel files were then used to build the dashboard in Tableau Public.
+> **Note:** Tableau Public does not support direct SQL file imports. Therefore, I exported the SQL query results to Excel, which are included in the `Tableau Table files` folder in this repository. These Excel files were then used to build the dashboard in Tableau Public.
