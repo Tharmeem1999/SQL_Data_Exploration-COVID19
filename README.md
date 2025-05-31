@@ -1,5 +1,4 @@
-# SQL Data Exploration – COVID-19  
-**(with Data Visualization in Tableau)**
+# COVID-19 Data Exploration & Visualization with SQL and Tableau 
 
 ## 📌 Introduction
 
